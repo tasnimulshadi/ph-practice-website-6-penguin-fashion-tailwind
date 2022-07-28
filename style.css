@@ -1,0 +1,12 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.font-Bebas {
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+/* colors */
+.bg-penguin_green {
+    background-image: linear-gradient(160deg, #A4BC46, #85A019);
+}

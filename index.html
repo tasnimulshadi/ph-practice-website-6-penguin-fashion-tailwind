@@ -6,14 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Tail Wind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tail Wind Custom -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        penguin_cream: '#FFFBF0',
+                        penguin_yellow: '#FABE4C',
+                        penguin_black: '#363958',
+
+                    }
+                }
+            }
+        }
+    </script>
     <!-- Style Sheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <header class="bg-penguin_cream">
+        <!-- navigation -->
+        <nav></nav>
+        <!-- banner -->
+        <section
+            class="banner container mx-auto sm:flex justify-around items-center pb-11 sm:pb-24 pt-6 px-3 sm:px-10 lg:px-28">
+            <div class="">
+                <h1 class="font-Bebas text-6xl sm:text-7xl">
+                    <span class="text-penguin_yellow">Be the Penguins</span>
+                    <br>
+                    <span class="text-penguin_black">of Winter</span>
+                </h1>
+                <p class="pb-3">Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry.</p>
+                <button
+                    class="bg-penguin_green text-white px-9 py-5 rounded-lg flex justify-between items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                    </svg>
+                    BUY NOW
+                </button>
+            </div>
+            <div class="pt-5 sm:pt-0">
+                <img class="w-4/5 sm:w-full mx-auto" src="images/model.png" alt="">
+            </div>
+        </section>
+    </header>
 </body>
 
 </html>
