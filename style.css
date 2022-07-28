@@ -10,3 +10,37 @@
 .bg-penguin_green {
     background-image: linear-gradient(160deg, #A4BC46, #85A019);
 }
+
+.penguin-container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* Media Query */
+/* Small Devices */
+@media screen and (max-width:576px) {
+    .penguin-container {
+        max-width: 1140px;
+    }
+}
+
+/* Medium Devices */
+@media screen and (min-width:577px) and (max-width:768px) {
+    .penguin-container {
+        max-width: 550px
+    }
+}
+
+/* Large Devices */
+@media screen and (min-width:767px) and (max-width:992px) {
+    .penguin-container {
+        max-width: 720px
+    }
+}
+
+/* Extra Large Devices */
+@media screen and (min-width:993px) and (max-width:1140px) {
+    .penguin-container {
+        width: 930px
+    }
+}
